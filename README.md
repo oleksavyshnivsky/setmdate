@@ -5,7 +5,7 @@ Set older Modify timestamp for multiple files
 Say, you want to have all the files in some folder (including subfolders) to look like they were not accessed or modified after a certain date. You can use this script to reset all newer Access and Modify timestamps to that date (without changing Time part of those timestamps — hh:mm:ss.ns are preserved).
 
 ## Usage: 
-sh setmdate.sh \[maxdate , \[ root, \[ filenamepattern \]\]\]
+sh setmdate.sh \[maxdate \[ root \[ filenamepattern \]\]\]
 
 - maxdate — the latest allowed date. Format: Any string that can be parsed into a date by bash (for example, 1999-12-31). Default: 'yesterday'
 - root — directory in which the target files are located. Default: '.'
